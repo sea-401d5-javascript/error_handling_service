@@ -5,7 +5,7 @@ const webpack = require('webpack-stream');
 const paths = {
   html: './app/**/*.html',
   js: './app/js/client.js',
-  tests: './test/error_service_test.js'
+  tests: './test/error_services_test.js'
 };
 
 gulp.task('bundle', ['clean'], () => {
