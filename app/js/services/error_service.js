@@ -6,6 +6,7 @@ module.exports = function(app) {
     service.logError = function(message) {
       return function(err) {
         errors.push(message);
+        console.log(err);
       };
     };
 

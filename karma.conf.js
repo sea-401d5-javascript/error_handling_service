@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Jun 15 2016 14:20:45 GMT-0700 (PDT)
+// Generated on Wed Jun 08 2016 13:49:50 GMT-0700 (PDT)
 
 module.exports = function(config) {
   config.set({
@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/test_bundle.js'
+      'test/*_bundle.js'
     ],
 
 
