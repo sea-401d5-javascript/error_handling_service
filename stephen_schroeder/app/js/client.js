@@ -1,6 +1,6 @@
 const angular = require('angular');
 
-const app = angular.module('ErrApp', []);
+const ErrApp = angular.module('ErrApp', []);
 
-require('./services/error_service')(app);
-require('./controllers/error_controller')(app);
+require('./services')(ErrApp);
+require('./controllers')(ErrApp);

@@ -45,10 +45,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(5);
+	__webpack_require__(7);
 	__webpack_require__(6);
-	__webpack_require__(4);
-	module.exports = __webpack_require__(7);
+	__webpack_require__(5);
+	module.exports = __webpack_require__(4);
 
 
 /***/ },
@@ -57,10 +57,10 @@
 
 	const angular = __webpack_require__(2);
 
-	const app = angular.module('ErrApp', []);
+	const ErrApp = angular.module('ErrApp', []);
 
-	__webpack_require__(4)(app);
-	__webpack_require__(5)(app);
+	__webpack_require__(4)(ErrApp);
+	__webpack_require__(6)(ErrApp);
 
 
 /***/ },
@@ -31551,6 +31551,15 @@
 
 /***/ },
 /* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(app) {
+	  __webpack_require__(5)(app);
+	};
+
+
+/***/ },
+/* 5 */
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
@@ -31573,7 +31582,16 @@
 
 
 /***/ },
-/* 5 */
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(app) {
+	  __webpack_require__(7)(app);
+	};
+
+
+/***/ },
+/* 7 */
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
@@ -31582,23 +31600,15 @@
 	  });
 	};
 
-
-/***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(app) {
-	  __webpack_require__(5)(app);
-	};
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = function(app) {
-	  __webpack_require__(4)(app);
-	};
+	// module.exports = function(app) {
+	//   app.controller('ErrApp', ['$sope', function() {
+	//     this.title = 'Top Dog';
+	//     this.year = 1972;
+	//     this.entry = function() {
+	//       return this.title + 'kickin\' ass since ' + this.year;
+	//     };
+	//   }]);
+	// };
 
 
 /***/ }
