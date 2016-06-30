@@ -25,6 +25,8 @@ gulp.task('bundle', () => {
   .pipe(gulp.dest('./build'));
 });
 
+gulp.task('build', ['bundle']);
+
 gulp.task('bundle:test', () => {
   return gulp.src(paths.tests)
   .pipe(webpack({
