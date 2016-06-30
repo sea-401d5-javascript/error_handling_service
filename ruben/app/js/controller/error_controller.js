@@ -1,5 +1,5 @@
 module.exports = function(app) {
-  app.controller('ErrorController', function(ErrorService) {
+  app.controller('errorController', function(ErrorService) {
     this.errors = ErrorService.getErrors();
   });
 };

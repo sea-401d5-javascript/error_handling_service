@@ -58,9 +58,9 @@
 	      errorService = ErrorService;
 	    });
 	  });
-	  it('should get errors', () => {
+	  it('should have a getter', () => {
 	    console.log(errorService);
-	    expect(typeof errorService.getErrors).toBe(true);
+	    expect(typeof errorService.getErrors).toBe('function');
 	  });
 
 	  it('should get an array', () => {
@@ -34715,7 +34715,7 @@
 /***/ function(module, exports) {
 
 	module.exports = function(app) {
-	  app.controller('ErrorController', function(ErrorService) {
+	  app.controller('errorController', function(ErrorService) {
 	    this.errors = ErrorService.getErrors();
 	  });
 	};
